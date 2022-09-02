@@ -5,7 +5,8 @@ import styled from '@emotion/styled'
 
 const LogoBox = styled.span`
   font-weight: bold;
-  font-size: 18px;
+  word-spacing:0.5px;
+  font-size: 26px;
   display: inline-flex;
   align-items: center;
   height: 30px;
@@ -13,6 +14,7 @@ const LogoBox = styled.span`
   padding: 10px;
   img {
     transition: 200ms ease;
+    
   }
   &:hover img {
     transform: rotate(180deg);
@@ -20,21 +22,20 @@ const LogoBox = styled.span`
 `
 
 const Logo = () => {
-  const logos = `/images/logo${useColorModeValue('', '-dark')}.png`
+  const logoImg = `/images/logo.png`
 
   return (
     <Link href="/" scroll={false}>
       <a>
-        <LogoBox>
-          <Image src={logos} width={20} height={20} alt="logo" />
-          <Text
-            color={useColorModeValue('gray.800', 'whiteAlpha.900')}
+        <LogoBox><Text
+            color={useColorModeValue('#8052FF', '#8052FF')}
             fontFamily='M PLUS Rounded 1c", sans-serif'
             fontWeight="bold"
             ml={3}
           >
-            Jai Patel
+            J a <Image src={logoImg} width={4.12} height={20} alt="logo" />
           </Text>
+       
         </LogoBox>
       </a>
     </Link>

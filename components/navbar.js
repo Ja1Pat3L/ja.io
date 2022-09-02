@@ -79,7 +79,7 @@ const LinkItem = ({ href, path, children}) => {
                 variant="outline"
                 aria-label="Options"
               />
-<MenuList>
+              <MenuList>
                 <NextLink href="/" passHref>
                   <MenuItem as={Link}>About</MenuItem>
                 </NextLink>
