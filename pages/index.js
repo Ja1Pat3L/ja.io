@@ -8,9 +8,7 @@ const Page = () => {
     return (
       
     <Container>
-      <Box>
-      <Spline scene="https://prod.spline.design/kaePoGj9bb5V9T0Z/scene.splinecode"/>  
-    </Box><Link href="/n" scroll={false}>
+     <Link href="/n" scroll={false}>
       <Box borderRadius="lg" bg ="red" mb="6" p={3} align="center" >
       Know More About Me !!
       </Box></Link>

@@ -11,13 +11,13 @@ import {
     MenuItem,
     MenuList,
     MenuButton,
-    IconButton,useColorModeValue
+    IconButton,useColorModeValue, Button, transition
 } from '@chakra-ui/react'
 import { HamburgerIcon } from '@chakra-ui/icons'
 
 const LinkItem = ({ href, path, children}) => {
     const active = path === href
-    const inactiveColor = useColorModeValue('gray200', 'whiteAlpha.900')
+    const inactiveColor = useColorModeValue('#8052FF', '#8052FF')
     return (
       <NextLink href={href} passHref scroll={false}>
         <Link
@@ -39,8 +39,6 @@ const LinkItem = ({ href, path, children}) => {
         position="fixed"
         as="nav"
         w="100%"
-        bg={useColorModeValue('#ffffff40', '#20202380')}
-        css={{ backdropFilter: 'blur(10px)' }}
         zIndex={2}
         {...props}
     ><Container
@@ -52,7 +50,13 @@ const LinkItem = ({ href, path, children}) => {
     justify="space-between"
   >
     <Flex align="center" mr={5}>
-      <Heading as="h1" size="lg" letterSpacing={'tighter'}>
+      <Heading 
+      color={useColorModeValue('#8052FF', '#8052FF')}
+      fontFamily='M PLUS Rounded 1c", sans-serif'
+      fontWeight="bold"
+      ml={3}
+      
+      as="h1" size="lg" letterSpacing={'tighter'}>
         <Logo />
       </Heading>
     </Flex>
@@ -65,11 +69,22 @@ const LinkItem = ({ href, path, children}) => {
           mt={{ base: 4, md: 0 }}
         >
           <LinkItem href="/works" path={path}>
-            Works
+            About
           </LinkItem>
           <LinkItem href="/posts" path={path}>
-            Posts
+            Projects
           </LinkItem>
+          <Button borderRadius="lg" solid
+        mb={6}
+        p={3}
+        
+        textColor='#8052ff'
+        textAlign="center"
+        bg={'8052ff'}
+        css={{ backdropFilter: 'blur(30px)', padding: 12  
+       }  }
+      >Download Resume</Button>
+
         </Stack>
         <Box ml={2} display={{ base: 'inline-block', md: 'none' }}>
             <Menu isLazy id="navbar-menu">
@@ -103,4 +118,29 @@ const LinkItem = ({ href, path, children}) => {
     )
 }
   
+// const Menu = styled.ul`
+//   display: flex;
+//   gap: 30px;
+//   align-items: center;
+//   margin: 0 30px 0 100px;
+//   padding: 0;
+//   pointer-events: auto;  button {
+//     margin: 0;
+//     width: auto;
+//     background: rgba(31, 66, 250, 0.2);
+//     border: 1px solid rgba(255, 255, 255, 0.4);
+//   }
+
+//   @media (max-width: 800px) {
+//     justify-content: space-between;
+//     li:nth-child(2),
+//     li:nth-child(3),
+//     li:nth-child(4),
+//     li:nth-child(5) {
+//       display: none;
+//     }
+//   }
+// `;
+
+
   export default Navbar
