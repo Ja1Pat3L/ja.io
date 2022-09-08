@@ -81,7 +81,7 @@ const LinkItem = ({ href, path, children}) => {
         textColor='#8052ff'
         textAlign="center"
         bg={'8052ff'}
-        css={{ backdropFilter: 'blur(30px)', padding: 12  
+        css={{ backdropFilter: 'blur(30px)'  
        }  }
       >Download Resume</Button>
 
@@ -91,22 +91,28 @@ const LinkItem = ({ href, path, children}) => {
               <MenuButton
                 as={IconButton}
                 icon={<HamburgerIcon />}
+                textColor="#190d3a"
                 variant="outline"
+                bg='#8052ff'
                 aria-label="Options"
+                css={{backdropFilter: 'blur(30px)'}}
               />
-              <MenuList>
+              <MenuList
+              textColor="#8052ff"
+                variant="outline"
+                bg={{backdropFilter: 'blur(2px)'}}
+                aria-label="Options"
+                css={{backdropFilter: 'blur(30px)'}}
+              >
                 <NextLink href="/" passHref>
                   <MenuItem as={Link}>About</MenuItem>
                 </NextLink>
                 <NextLink href="/works" passHref>
                   <MenuItem as={Link}>Works</MenuItem>
                 </NextLink>
-                <NextLink href="/posts" passHref>
-                  <MenuItem as={Link}>Posts</MenuItem>
-                </NextLink>
                 <MenuItem
                   as={Link}
-                  href="https://github.com/craftzdog/craftzdog-homepage"
+                  href="https://github.com/Ja1Pat3L/ja.io/"
                 >
                   View Source
                 </MenuItem>

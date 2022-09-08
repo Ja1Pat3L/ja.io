@@ -18,7 +18,7 @@ const LogoBox = styled.span`
   }
   &:hover img {
     transform: rotate(180deg);
-  }
+  }y    
 `
 
 const Logo = () => {

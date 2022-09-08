@@ -9,10 +9,10 @@ const Page = () => {
       
     <Container>
      <Link href="/n" scroll={false}>
-      <Box borderRadius="lg" bg ="red" mb="6" p={3} align="center" >
+      <Box borderRadius="lg" bg ="#8052ff" mb="6" p={3} align="center" >
       Know More About Me !!
       </Box></Link>
-      <Box display={{md: 'flex'}}>
+      <Box display={{md: 'flex'}} color={'#8052ff'}>
         <Box flexGrow={1}>
            <p> “As in everything, nature is the best instructor” - Adolf Hitler 
           </p>
