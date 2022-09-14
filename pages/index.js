@@ -9,16 +9,20 @@ const Page = () => {
       
     <Container>
      <Link href="/n" scroll={false}>
-      <Box borderRadius="lg" bg ="#8052ff" mb="6" p={3} align="center" >
+      <Box borderRadius="lg" mb="6" p={3} align="center" 
+      textColor="#8052ff"
+      variant="outline"
+      bg={{backdropFilter: 'blur(2px)'}}
+      aria-label="Options"
+      css={{backdropFilter: 'blur(30px)'}}>
       Know More About Me !!
-      </Box></Link>
+      </Box>
+      </Link>
       <Box display={{md: 'flex'}} color={'#8052ff'}>
         <Box flexGrow={1}>
            <p> “As in everything, nature is the best instructor” - Adolf Hitler 
           </p>
         </Box>
-
-
       </Box>
     </Container>
     )

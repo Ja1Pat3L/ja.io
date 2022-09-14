@@ -14,6 +14,7 @@ import {
     IconButton,useColorModeValue, Button, transition
 } from '@chakra-ui/react'
 import { HamburgerIcon } from '@chakra-ui/icons'
+import ThemeToggleButton from './theme-toggle-button'
 
 const LinkItem = ({ href, path, children}) => {
     const active = path === href
@@ -59,6 +60,7 @@ const LinkItem = ({ href, path, children}) => {
       as="h1" size="lg" letterSpacing={'tighter'}>
         <Logo />
       </Heading>
+      
     </Flex>
     <Stack
           direction={{ base: 'column', md: 'row' }}
@@ -68,13 +70,29 @@ const LinkItem = ({ href, path, children}) => {
           flexGrow={1}
           mt={{ base: 4, md: 0 }}
         >
-          <LinkItem href="/works" path={path}>
+          <LinkItem href="/about" path={path}>
             About
           </LinkItem>
-          <LinkItem href="/posts" path={path}>
+          <LinkItem href="/projects" path={path}>
             Projects
           </LinkItem>
-          <Button borderRadius="lg" solid
+          <Button 
+             as={Link}
+             href="https://github.com/Ja1Pat3L/ja.io/"
+          borderRadius="lg" solid
+        mb={6}
+        p={3}
+        
+        textColor='#8052ff'
+        textAlign="center"
+        bg={'8052ff'}
+        css={{ backdropFilter: 'blur(30px)'  
+       }  }
+      >Github</Button>
+      <Button 
+             as={Link}
+             href="https://github.com/Ja1Pat3L/ja.io/"
+          borderRadius="lg" solid
         mb={6}
         p={3}
         
@@ -84,69 +102,38 @@ const LinkItem = ({ href, path, children}) => {
         css={{ backdropFilter: 'blur(30px)'  
        }  }
       >Download Resume</Button>
-
         </Stack>
+        <Box flex={1} align="right">
+          <ThemeToggleButton/>
         <Box ml={2} display={{ base: 'inline-block', md: 'none' }}>
+            
             <Menu isLazy id="navbar-menu">
               <MenuButton
                 as={IconButton}
                 icon={<HamburgerIcon />}
-                textColor="#190d3a"
-                variant="outline"
-                bg='#8052ff'
+                textColor="#8052ff"
+                bg={{backdropFilter: 'blur(2px)'}}
                 aria-label="Options"
                 css={{backdropFilter: 'blur(30px)'}}
               />
               <MenuList
               textColor="#8052ff"
-                variant="outline"
+                variant=''
                 bg={{backdropFilter: 'blur(2px)'}}
                 aria-label="Options"
                 css={{backdropFilter: 'blur(30px)'}}
               >
-                <NextLink href="/" passHref>
+                <NextLink href="/about" passHref>
                   <MenuItem as={Link}>About</MenuItem>
                 </NextLink>
-                <NextLink href="/works" passHref>
-                  <MenuItem as={Link}>Works</MenuItem>
+                <NextLink href="/projects" passHref>
+                  <MenuItem as={Link}>Projects</MenuItem>
                 </NextLink>
-                <MenuItem
-                  as={Link}
-                  href="https://github.com/Ja1Pat3L/ja.io/"
-                >
-                  View Source
-                </MenuItem>
               </MenuList>
             </Menu>
-          </Box>
+          </Box></Box>
       </Container>
     </Box>
     )
 }
-  
-// const Menu = styled.ul`
-//   display: flex;
-//   gap: 30px;
-//   align-items: center;
-//   margin: 0 30px 0 100px;
-//   padding: 0;
-//   pointer-events: auto;  button {
-//     margin: 0;
-//     width: auto;
-//     background: rgba(31, 66, 250, 0.2);
-//     border: 1px solid rgba(255, 255, 255, 0.4);
-//   }
-
-//   @media (max-width: 800px) {
-//     justify-content: space-between;
-//     li:nth-child(2),
-//     li:nth-child(3),
-//     li:nth-child(4),
-//     li:nth-child(5) {
-//       display: none;
-//     }
-//   }
-// `;
-
-
   export default Navbar
