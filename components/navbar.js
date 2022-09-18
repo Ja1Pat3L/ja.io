@@ -113,14 +113,11 @@ const LinkItem = ({ href, path, children}) => {
                 icon={<HamburgerIcon />}
                 textColor="#8052ff"
                 bg={{backdropFilter: 'blur(2px)'}}
-                aria-label="Options"
                 css={{backdropFilter: 'blur(30px)'}}
               />
               <MenuList
               textColor="#8052ff"
-                variant=''
                 bg={{backdropFilter: 'blur(2px)'}}
-                aria-label="Options"
                 css={{backdropFilter: 'blur(30px)'}}
               >
                 <NextLink href="/about" passHref>
