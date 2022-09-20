@@ -3,20 +3,21 @@ import Spline from '@splinetool/react-spline';
 import Link from 'next/link'
 import styled from "styled-components";
 import theme from "@chakra-ui/react";
+import Section from '../components/section'
+import Paragraph from "../components/paragraph";
 
-const profileimage="/images/pp.png  "
+const profileimage="/images/Profile Image.png  "
 
 const Page = () => {
     return (
       
     <Container>
      <Link href="/n" scroll={false}>
-      <Box borderRadius="lg" mb="6" p={3} align="center" 
-      textColor="#8052ff"
+      <Box borderRadius="lg" mb="6" p={3}  
       bg={{backdropFilter: 'blur(2px)'}}
       aria-label="Options"
       css={{backdropFilter: 'blur(30px)'}}>
- <p>“As in everything, nature is the best instructor” - Adolf</p>  
+ <Paragraph>“As in everything, nature is the best instructor” - Adolf</Paragraph>  
       </Box>
       </Link>
         <br></br> 
@@ -29,20 +30,20 @@ const Page = () => {
           <Image borderColor="violet" borderWidth={2} borderderStyle="solid" maxWidth="100px" display="inine-block" borderRadius="full"
           src={profileimage} alt="Pic"
           /> <br></br>
+          <Section delay={0.1}>
           <Heading textColor="#8052ff">About Me</Heading>
-          <br></br>
+          </Section>
       </Box>
-      <Box borderRadius="lg" mb="6" p={3} align="center" 
-      textColor="#8052ff">
-         
- <p>Jai is a Canada Based Full Stack Developer proficient in building Websites and WebAPI's.</p> <br></br>
+      <Box borderRadius="lg" mb="6" p={3} align="center">
+      <Section delay={0.1}>  
+ <Paragraph>Jai is a Canada Based Full Stack Developer proficient in building Websites and WebAPI's.</Paragraph> <br></br>
  <Heading textColor="#8052ff">Bio</Heading>
           <br></br>
- <p>
-  Origins from India, Jai achieved his bachelor's degree in Computer Science Engineering and graduated in 2021. 
-  To further progress in the field, Canada was the chosen destination to learn, achieve and grow.
-  Currently pursuing Advanced Graduate Software Engineering Technology from Centennial College</p>  
-      </Box>
+ <Paragraph>
+ Originating from India, Jai achieved his bachelor's degree in Computer Science Engineering and graduated in 2021. 
+Currently pursuing Advanced Graduate Software Engineering Technology from Centennial College, Canada, to advance in the field.</Paragraph>  
+  </Section> 
+</Box>
     </Container>
     )
   }
