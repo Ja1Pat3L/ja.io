@@ -11,7 +11,7 @@ import {
     MenuItem,
     MenuList,
     MenuButton,
-    IconButton,useColorModeValue, Button, transition
+    IconButton,useColorModeValue, Button
 } from '@chakra-ui/react'
 import { HamburgerIcon } from '@chakra-ui/icons'
 import ThemeToggleButton from './theme-toggle-button'
@@ -70,7 +70,7 @@ const LinkItem = ({ href, path, children}) => {
           flexGrow={1}
           mt={{ base: 4, md: 0 }}
         >
-          <LinkItem href="/about" path={path}>
+          <LinkItem href="/about" path='../pages/about.js'>
             About
           </LinkItem>
           <LinkItem href="/projects" path={path}>

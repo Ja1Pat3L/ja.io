@@ -1,6 +1,6 @@
 
 import Spline from '@splinetool/react-spline';
-import { Box, Container } from '@chakra-ui/react'
+import { Box } from '@chakra-ui/react'
 
 const Render = () => {
     return (
