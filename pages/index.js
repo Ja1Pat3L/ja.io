@@ -5,6 +5,7 @@ import styled from "styled-components";
 import theme from "@chakra-ui/react";
 import Section from '../components/section'
 import Paragraph from "../components/paragraph";
+import { BioSection,BioYear } from "../components/bio";
 
 const profileimage="/images/Profile Image.png  "
 
@@ -17,7 +18,7 @@ const Page = () => {
       bg={{backdropFilter: 'blur(2px)'}}
       aria-label="Options"
       css={{backdropFilter: 'blur(30px)'}}>
- <Paragraph>“As in everything, nature is the best instructor” - Adolf</Paragraph>  
+ <Heading size="24" textColor="#8052ff">“As in everything, nature is the best instructor” - Adolf</Heading>  
       </Box>
       </Link>
         <br></br> 
@@ -34,15 +35,50 @@ const Page = () => {
           <Heading textColor="#8052ff">About Me</Heading>
           </Section>
       </Box>
-      <Box borderRadius="lg" mb="6" p={3} align="center">
-      <Section delay={0.1}>  
- <Paragraph>Jai is a Canada Based Full Stack Developer proficient in building Websites and WebAPI's.</Paragraph> <br></br>
- <Heading textColor="#8052ff">Bio</Heading>
-          <br></br>
- <Paragraph>
- Originating from India, Jai achieved his bachelor's degree in Computer Science Engineering and graduated in 2021. 
-Currently pursuing Advanced Graduate Software Engineering Technology from Centennial College, Canada, to advance in the field.</Paragraph>  
-  </Section> 
+      <Box borderRadius="lg" mb="6" p={2} align="center">
+      <Section delay={0.2}>  
+ <Paragraph>Jai is a Canada Based Full Stack Developer proficient in implementing Websites, WebAPI's, Data Warehousing and Machine Learning.</Paragraph>
+</Section> 
+<Section delay={0.5}><Box flexShrink={0} borderRadius="md" mb="6" p={3} align="center" textColor="#8052ff">
+<Heading textColor="#8052ff">Timeline</Heading><br></br>
+<BioSection>
+  <BioYear>
+    1999
+  </BioYear>
+  Born in Uttar Pradesh, India
+  </BioSection>
+  <BioSection>
+  <BioYear>
+    2016
+  </BioYear>
+  Graduated High School, India
+  </BioSection>
+  <BioSection>
+  <BioYear>
+    2020
+  </BioYear>
+  Graduated Bachelor's in Computer Science Engineering, India
+  </BioSection>
+  <BioSection>
+  <BioYear>
+    2022
+  </BioYear>
+  Pursuing Advanced Graduate in Software Engineering Technology, Centennial College, Canada
+  </BioSection>
+</Box>
+  <Box flexShrink={0} borderRadius="md" mb="6" p={3} align="center" textColor="#8052ff">
+  <Heading textColor="#8052ff" >Proficiency</Heading><Box flexShrink={0} borderRadius="md" mb="6" p={3} align="center" textColor="#8052ff">
+Bar Chart
+</Box></Box>
+<Box flexShrink={0} borderRadius="md" mb="6" p={3} align="center" textColor="#8052ff">
+<Heading textColor="#8052ff">Socials</Heading>
+  
+</Box>
+
+
+</Section>
+
+
 </Box>
     </Container>
     )
