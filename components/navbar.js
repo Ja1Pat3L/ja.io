@@ -33,7 +33,7 @@ const LinkItem = ({ href, path, children}) => {
   }
   
   const Navbar = props => {
-    const { path } = props
+    
   
     return (
       <Box
@@ -73,7 +73,7 @@ const LinkItem = ({ href, path, children}) => {
           <LinkItem href="/about" path='../pages/about.js'>
             About
           </LinkItem>
-          <LinkItem href="/projects" path={path}>
+          <LinkItem href="/projects" path='../pages/projects.js'>
             Projects
           </LinkItem>
           <Button 

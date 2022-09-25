@@ -53,13 +53,13 @@ const Page = () => {
   <BioYear>
     2020
   </BioYear>
-  Graduated Bachelors Computer Science Engineering
+  Bachelors Computer Science Engineering
   </BioSection>
   <BioSection>
   <BioYear>
     2022
   </BioYear>
-  Pursuing Advanced Graduate in Software Engineering Technology, Centennial College, Canada
+  Advanced Graduate Software Engineering Technology 
   </BioSection>
 </Box>
   <Box flexShrink={0} borderRadius="md" mb="6" p={3} align="center" textColor="#8052ff">

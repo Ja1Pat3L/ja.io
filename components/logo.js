@@ -9,16 +9,14 @@ const LogoBox = styled.span`
   font-size: 26px;
   display: inline-flex;
   align-items: center;
-  height: 30px;
-  line-height: 20px;
-  padding: 10px;
+  
   img {
     transition: 200ms ease;
     
   }
   &:hover img {
     transform: rotate(180deg);
-  }y    
+  }  
 `
 
 const Logo = () => {
@@ -31,9 +29,9 @@ const Logo = () => {
             color={useColorModeValue('#8052FF', '#8052FF')}
             fontFamily='M PLUS Rounded 1c", sans-serif'
             fontWeight="bold"
-            ml={3}
+            ml={3}  
           >
-            J a <Image src={logoImg} width={4.12} height={20} alt="logo" />
+            J a <Image src={logoImg} width={4.12} height={20} layout="intrinsic" alt="logo" />
           </Text>
        
         </LogoBox>
