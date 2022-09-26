@@ -31,7 +31,7 @@ const Logo = () => {
             fontWeight="bold"
             ml={3}  
           >
-            J a <Image src={logoImg} width={4.12} height={20} layout="intrinsic" alt="logo" />
+            J a <Image src={logoImg} width={4.12} height={20} layout='intrinsic' alt="logo" />
           </Text>
        
         </LogoBox>
