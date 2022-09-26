@@ -3,14 +3,14 @@ import { Container,Box, Heading,Image } from "@chakra-ui/react"
 import Section from '../components/section'
 import Paragraph from '../components/paragraph';
 import { BioSection,BioYear } from '../components/bio'; 
-const profileimage='/images/Profile Image.png'
+const profileimage='/images/image1.png'
 
 const Page = () => {
     return (
       
     <Container>
      <Section delay={0.1}>
-      <Box borderRadius="lg" mb="6" p={3}  
+      <Box borderRadius="lg" mb="45" p={3}  
       bg={{backdropFilter: 'blur(2px)'}}
       aria-label="Options"
       css={{backdropFilter: 'blur(30px)'}}>

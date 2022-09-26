@@ -58,9 +58,9 @@ const LinkItem = ({ href, path, children}) => {
       ml={3}
       
       as="h1" size="lg" letterSpacing={'tighter'}>
-        <Logo />
+
       </Heading>
-      
+      <Logo />
     </Flex>
     <Stack
           direction={{ base: 'column', md: 'row' }}

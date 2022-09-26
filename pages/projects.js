@@ -21,7 +21,7 @@ Currently working on Nextjs Portfolio
 </WorkGridItem>
 </Section>
 <Section delay={0.3}>
-    <WorkGridItem id="JAVAEE" title="Java Enterprise Edition API" thumbnail={image1}>
+    <WorkGridItem id="JAVAEE" title="Java EE API" thumbnail={image1}>
  A REST API based on Java Enterprise Edition 
     </WorkGridItem>
 </Section>
@@ -31,18 +31,18 @@ Currently working on Nextjs Portfolio
 </WorkGridItem>
 </Section>
 <Section delay={0.3}>
-    <WorkGridItem id="Android" title="Restaurant Locator Android Application" thumbnail={image1}>
+    <WorkGridItem id="Android" title="Restaurant Application" thumbnail={image1}>
 An android application to locate restaurants in nearby locations
     </WorkGridItem>
 </Section>
 <Section delay={0.3}>
-<WorkGridItem id="MATLAB" title="Lung Cancer Detection using MATLAB" thumbnail={image1}>
+<WorkGridItem id="MATLAB" title="Lung Cancer Detection " thumbnail={image1}>
     Lung Cancer Detection using MATLAB image Processing using K-Means clustering 
 </WorkGridItem>
 </Section>
 <Section delay={0.3}>
 <WorkGridItem id="AUTOCAD" title="Tractebel Engineering Internship" thumbnail={image1}>
-    Lung Cancer Detection using MATLAB image Processing using K-Means clustering 
+    Internship at Tractebel Engineering Pvt. Ltd. on a client based Gas Pipeline Project  
 </WorkGridItem>
 </Section>
 </SimpleGrid>
