@@ -3,7 +3,7 @@ import { Container,Box, Heading,Image } from "@chakra-ui/react"
 import Section from '../components/section'
 import Paragraph from '../components/paragraph';
 import { BioSection,BioYear } from '../components/bio'; 
-const profileimage='/images/image1.png'
+const profileimage='/images/Profile Image.png'
 
 const Page = () => {
     return (

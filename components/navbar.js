@@ -5,7 +5,6 @@ import {
     Box,
     Link,
     Stack,
-    Heading,
     Flex,
     Menu,
     MenuItem,
@@ -51,15 +50,6 @@ const LinkItem = ({ href, path, children}) => {
     justify="space-between"
   >
     <Flex align="center" mr={5}>
-      <Heading 
-      color={useColorModeValue('#8052FF', '#8052FF')}
-      fontFamily='M PLUS Rounded 1c", sans-serif'
-      fontWeight="bold"
-      ml={3}
-      
-      as="h1" size="lg" letterSpacing={'tighter'}>
-
-      </Heading>
       <Logo />
     </Flex>
     <Stack
