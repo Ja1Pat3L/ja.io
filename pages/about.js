@@ -1,16 +1,17 @@
 import { Container,Box, Heading,Image } from "@chakra-ui/react"
 
 import Section from '../components/section'
+import Layout from '../components/layouts/article'
 import Paragraph from '../components/paragraph';
 import { BioSection,BioYear } from '../components/bio'; 
-const profileimage='/images/Profile Image.png'
+const profileimage='/images/Profile.png'
 
 const Page = () => {
     return (
-      
+      <Layout>
     <Container>
      <Section delay={0.1}>
-      <Box borderRadius="lg" mb="45" p={3}  
+      <Box borderRadius="lg" mb={18} p={3}  
       bg={{backdropFilter: 'blur(2px)'}}
       aria-label="Options"
       css={{backdropFilter: 'blur(30px)'}}>
@@ -23,19 +24,18 @@ const Page = () => {
         mt={{base:4,md:0}}
         ml={{md:6}}
         align="center"
-        >  <Section delay={0.2}>
+        >  <Section delay={0.3}>
           <Image maxWidth="100px" display="inine-block"
           src={profileimage} alt="Pic"
-          /> <br></br></Section>
-          <Section delay={0.2}>
+          /> 
           <Heading textColor="#8052ff">About Me</Heading>
-          </Section>
-      </Box>
-      <Box borderRadius="lg" mb="6" p={3} align="center">
-      <Section delay={0.2}>  
+         
+    
+      <Box borderRadius="lg" mb="3" p={3} align="center">
+         </Box>
  <Paragraph>Jai is a Canada Based Full Stack Developer proficient in implementing Websites, WebAPIs, Data Warehousing and Machine Learning.</Paragraph>
-</Section> 
-<Section delay={0.5}><Box flexShrink={0} borderRadius="md" mb="6" p={3} align="center" textColor="#8052ff">
+
+<Box flexShrink={0} borderRadius="md" mt="8" mb="6" p={3} align="center" textColor="#8052ff">
 <Heading textColor="#8052ff">Timeline</Heading><br></br>
 <BioSection>
   <BioYear>
@@ -76,7 +76,7 @@ Bar Chart
 
 
 </Box>
-    </Container>
+    </Container></Layout>
     )
   }
 
