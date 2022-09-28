@@ -24,7 +24,7 @@ const Page = () => {
         mt={{base:4,md:0}}
         ml={{md:6}}
         align="center"
-        >  <Section delay={0.3}>
+        >  <Section delay={0.1}>
           <Image maxWidth="100px" display="inine-block"
           src={profileimage} alt="Pic"
           /> 
@@ -62,11 +62,13 @@ const Page = () => {
   Advanced Graduate Software Engineering Technology 
   </BioSection>
 </Box>
-  <Box flexShrink={0} borderRadius="md" mb="6" p={3} align="center" textColor="#8052ff">
-  <Heading textColor="#8052ff" >Proficiency</Heading><Box flexShrink={0} borderRadius="md" mb="6" p={3} align="center" textColor="#8052ff">
-Bar Chart
-</Box></Box>
-<Box flexShrink={0} borderRadius="md" mb="6" p={3} align="center" textColor="#8052ff">
+  <Box flexShrink={0} borderRadius="md" mb="6" align="center" textColor="#8052ff">
+  <Heading textColor="#8052ff" >Proficiency</Heading>
+</Box>
+<Box flexShrink={0} borderRadius="md" mb="6" align="center" textColor="#8052ff">
+  <Heading textColor="#8052ff">Interests</Heading>
+</Box>
+<Box >
 <Heading textColor="#8052ff">Socials</Heading>
   
 </Box>
