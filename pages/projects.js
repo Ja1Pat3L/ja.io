@@ -3,6 +3,7 @@ import Section from '../components/section'
 import {WorkGridItem} from '../components/grid-item'
 import Layout from '../components/layouts/article'
 import image1 from '../public/images/image1.png'
+import Footer from "../components/footer"
 
 const Projects=()=>{
 
@@ -55,6 +56,7 @@ An android application to locate restaurants in nearby locations
 </WorkGridItem>
 </Section>
 </SimpleGrid>
+<Footer/>
 </Container></Layout>
     )
 }

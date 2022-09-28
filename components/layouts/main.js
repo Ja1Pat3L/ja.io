@@ -3,6 +3,7 @@ import Navbar from '../navbar';
 import Render from '../render'
 import { Box, Container } from '@chakra-ui/react'
 import NoSsr from '../no-ssr';
+
 const Main = ({ children, router }) => {
     return (
         <Box as="main">

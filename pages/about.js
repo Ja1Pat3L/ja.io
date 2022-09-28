@@ -1,9 +1,10 @@
-import { Container,Box, Heading,Image } from "@chakra-ui/react"
-
+import { Container,Box, Heading,Image,ListItem,Link,Button,List } from "@chakra-ui/react"
 import Section from '../components/section'
 import Layout from '../components/layouts/article'
 import Paragraph from '../components/paragraph';
-import { BioSection,BioYear } from '../components/bio'; 
+import { BioSection,BioYear,BioTitle } from '../components/bio'; 
+import Footer from '../components/footer';
+import { IoLogoDiscord, IoLogoInstagram, IoLogoGithub,IoLogoLinkedin,IoLogoReddit } from 'react-icons/io5'
 const profileimage='/images/Profile.png'
 
 const Page = () => {
@@ -65,12 +66,88 @@ const Page = () => {
   <Box flexShrink={0} borderRadius="md" mb="6" align="center" textColor="#8052ff">
   <Heading textColor="#8052ff" >Proficiency</Heading>
 </Box>
-<Box flexShrink={0} borderRadius="md" mb="6" align="center" textColor="#8052ff">
-  <Heading textColor="#8052ff">Interests</Heading>
+<Box flexShrink={0} borderRadius="md" mt="6" mb="6" p={3} align="center" textColor="#8052ff">
+  <Heading textColor="#8052ff">Interests</Heading><br></br>
+<BioSection>
+  <BioTitle>Sports
+</BioTitle>
+UEFA-Real Madrid CF, FIVB-Japan
+</BioSection>
+<BioSection>
+  <BioTitle>Games
+</BioTitle>
+Valorant, Fortnite, CSGO, PES2023, FIFA23
+</BioSection>
+<BioSection>
+  <BioTitle>Culture
+</BioTitle>
+Japan, Egypt, Spain, Turkey, Italy, Germany
+</BioSection>
+<BioSection>
+  <BioTitle>Science
+</BioTitle>
+Blockchain, Automation, Astrophysics
+</BioSection>
 </Box>
 <Box >
-<Heading textColor="#8052ff">Socials</Heading>
-  
+<Heading textColor="#8052ff">Socials</Heading><br></br>
+<List> <ListItem>
+            <Link href="https://www.instagram.com/jai_99_/" target="_blank">
+              <Button
+                variant="ghost"
+                color="#8052ff"
+                leftIcon={<IoLogoInstagram />}
+              >
+                @jai_99_
+              </Button>
+            </Link>
+          </ListItem>
+          <ListItem>
+            <Link href="https://github.com/Ja1Pat3L" target="_blank">
+              <Button
+                variant="ghost"
+                color="#8052ff"
+                leftIcon={<IoLogoLinkedin />}
+              >
+                @JaiPatel
+              </Button>
+            </Link>
+          </ListItem>
+          <ListItem>
+            <Link href="https://github.com/Ja1Pat3L" target="_blank">
+              <Button
+                variant="ghost"
+                color="#8052ff"
+                leftIcon={<IoLogoGithub />}
+              >
+                @Ja1Pat3L
+              </Button>
+            </Link>
+          </ListItem>
+          <ListItem>
+            <Link href="https://www.reddit.com/user/SnooGuavas9295" target="_blank">
+              <Button
+                variant="ghost"
+                color="#8052ff"
+                leftIcon={<IoLogoReddit />}
+              >
+                @TheSexyPriest
+              </Button>
+            </Link>
+          </ListItem>
+          <ListItem>
+            <Link href="https://discord.com/TheSexyPriest#4549" target="_blank">
+              <Button
+                variant="ghost"
+                color="#8052ff"
+                leftIcon={<IoLogoDiscord />}
+              >
+                @TheSexyPriest#4549
+              </Button>
+            </Link>
+          </ListItem>
+         
+        </List>
 </Box>
 
 
@@ -78,7 +155,8 @@ const Page = () => {
 
 
 </Box>
-    </Container></Layout>
+<Footer/>  
+</Container></Layout>
     )
   }
 

@@ -14,3 +14,9 @@ text-align:justify;
   margin-right: 1em;
   color: #8052ff;
 `
+export const BioTitle= styled.span`
+text-align:justify;
+  font-weight: bold;
+  margin-right: 1em;
+  color: #8052ff;
+`
