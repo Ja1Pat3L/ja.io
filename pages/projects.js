@@ -26,7 +26,7 @@ Currently working on Nextjs Portfolio
     </WorkGridItem>
 </Section>
 <Section delay={0.3}>
-<WorkGridItem id="ASP.Net" title="ASP.NET API and MVC" thumbnail={image1}>
+<WorkGridItem id="ASP" title="ASP.NET API and MVC" thumbnail={image1}>
     A REST API based on ASP.net used for a simple ASP.Net MVC front end tutorial Website with authentication and Client Support 
 </WorkGridItem>
 </Section>

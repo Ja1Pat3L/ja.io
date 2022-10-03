@@ -6,6 +6,7 @@ import { BioSection,BioYear,BioTitle } from '../components/bio';
 import Footer from '../components/footer';
 import { IoLogoDiscord, IoLogoInstagram, IoLogoGithub,IoLogoLinkedin,IoLogoReddit } from 'react-icons/io5'
 const profileimage='/images/Profile.png'
+const graph='/images/Group.png'
 
 const Page = () => {
     return (
@@ -65,6 +66,10 @@ const Page = () => {
 </Box>
   <Box flexShrink={0} borderRadius="md" mb="6" align="center" textColor="#8052ff">
   <Heading textColor="#8052ff" >Proficiency</Heading>
+
+          <Image mt={6} display="inine-block"
+          src={graph} alt="Pic"
+></Image>          
 </Box>
 <Box flexShrink={0} borderRadius="md" mt="6" mb="6" p={3} align="center" textColor="#8052ff">
   <Heading textColor="#8052ff">Interests</Heading><br></br>
