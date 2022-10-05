@@ -2,11 +2,10 @@ import { Container,Box, Heading,Image,ListItem,Link,Button,List } from "@chakra-
 import Section from '../components/section'
 import Layout from '../components/layouts/article'
 import Paragraph from '../components/paragraph';
-import { BioSection,BioYear,BioTitle } from '../components/bio'; 
+import { Bio,Title } from '../components/bio'; 
 import Footer from '../components/footer';
 import { IoLogoDiscord, IoLogoInstagram, IoLogoGithub,IoLogoLinkedin,IoLogoReddit } from 'react-icons/io5'
 const profileimage='/images/Profile.png'
-const graph='/images/Group.png'
 
 const Page = () => {
     return (
@@ -39,60 +38,89 @@ const Page = () => {
 
 <Box flexShrink={0} borderRadius="md" mt="8" mb="6" p={3} align="center" textColor="#8052ff">
 <Heading textColor="#8052ff">Timeline</Heading><br></br>
-<BioSection>
-  <BioYear>
-    1999
-  </BioYear>
-  Born in Uttar Pradesh, India
-  </BioSection>
-  <BioSection>
-  <BioYear>
+
+  <Bio>
+  <Title>
     2016
-  </BioYear>
+  </Title>
   Graduated High School
-  </BioSection>
-  <BioSection>
-  <BioYear>
+  </Bio>
+  <Bio>
+  <Title>
     2020
-  </BioYear>
+  </Title>
   Bachelors Computer Science Engineering
-  </BioSection>
-  <BioSection>
-  <BioYear>
+  </Bio>
+  <Bio>
+  <Title>
     2022
-  </BioYear>
+  </Title>
   Advanced Graduate Software Engineering Technology 
-  </BioSection>
+  </Bio>
 </Box>
   <Box flexShrink={0} borderRadius="md" mb="6" align="center" textColor="#8052ff">
-  <Heading textColor="#8052ff" >Proficiency</Heading>
-
-          <Image mt={6} display="inine-block"
-          src={graph} alt="Pic"
-></Image>          
+  <Heading textColor="#8052ff" mb="6" >Proficiency</Heading>
+  <Bio>
+  <Title>
+    Frameworks
+  </Title>
+  Next.js, Angular.js, Express.js, Spring, ASP.NET
+  </Bio>
+  <Bio>
+  <Title>
+  Databases
+  </Title>
+MSSQL, SQL-SSMS, MongoDB, DynamoDB
+  </Bio>
+  <Bio>
+  <Title>
+    API
+  </Title>
+   Spring API and Microservices, .NETAPI, Python API
+  </Bio>
+ 
+  <Bio>
+  <Title>
+    ML/AI
+  </Title>
+  Python, MATLAB
+  </Bio>
+  <Bio>
+  <Title>
+  Control 
+  </Title>
+ Github, JIRA
+  </Bio>
+  <Bio>
+  <Title>
+  Others
+  </Title>
+ PowerBI, AUTOCAD, Android 
+  </Bio>
+               
 </Box>
 <Box flexShrink={0} borderRadius="md" mt="6" mb="6" p={3} align="center" textColor="#8052ff">
   <Heading textColor="#8052ff">Interests</Heading><br></br>
-<BioSection>
-  <BioTitle>Sports
-</BioTitle>
+<Bio>
+  <Title>Sports
+</Title>
 UEFA-Real Madrid CF, FIVB-Japan
-</BioSection>
-<BioSection>
-  <BioTitle>Games
-</BioTitle>
+</Bio>
+<Bio>
+  <Title>Games
+</Title>
 Valorant, Fortnite, CSGO, PES2023, FIFA23
-</BioSection>
-<BioSection>
-  <BioTitle>Culture
-</BioTitle>
+</Bio>
+<Bio>
+  <Title>Culture
+</Title>
 Japan, Egypt, Spain, Turkey, Italy, Germany
-</BioSection>
-<BioSection>
-  <BioTitle>Science
-</BioTitle>
+</Bio>
+<Bio>
+  <Title>Science
+</Title>
 Blockchain, Automation, Astrophysics
-</BioSection>
+</Bio>
 </Box>
 <Box >
 <Heading textColor="#8052ff">Socials</Heading><br></br>
