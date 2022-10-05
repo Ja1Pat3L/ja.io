@@ -30,7 +30,7 @@ import Section from "../../components/section"
           ja-io <Badge>2022-</Badge>
         </Title>
         <Paragraph>
-          A portfolio website made using next.js rendering 3d Object. Using Spline React to load object with premade orbit controls using three.js.
+          A three dimensional website made using Next.js, Spline 3D, three.js, Chakra-UI and Framer Motion.   
         </Paragraph>
         <List ml={4} my={4}>
           <ListItem>
@@ -45,7 +45,7 @@ import Section from "../../components/section"
           </ListItem>
           <ListItem textColor='#8052ff'>
             <Meta>Stack</Meta>
-            <span>Next.js/Spline.js/Chart.js/Chakra.js/React/three.js</span>
+            <span>Next.js-Spline3D-Chart.js-Chakra.js-React-Three.js</span>
           </ListItem>
 
         </List>

@@ -8,7 +8,7 @@ text-align:left;
   color: #8052ff;
 `
 export const Title= styled.span`
-text-align:center;
+text-align:left;
   font-weight: bold;
   margin-right: 1em;
   color: #8052ff;

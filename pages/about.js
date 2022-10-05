@@ -92,9 +92,9 @@ MSSQL, SQL-SSMS, MongoDB, DynamoDB
   </Bio>
   <Bio>
   <Title>
-    Machine Learning
+    Automation
   </Title>
-  Python, MATLAB, Github, JIRA
+  Python, MATLAB
   </Bio>
   <Bio>
   <Title>
