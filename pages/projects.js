@@ -7,7 +7,7 @@ import next from "../public/images/Next.png"
 import android from "../public/images/Android.png"
 import mern from "../public/images/Mern.png"
 import javaswing from "../public/images/JavaSwing.png"
-import asp from "../public/images/asp.png"
+import asp from "../public/images/Asp.png"
 import internship from "../public/images/Internship.png" 
 import matlab from "../public/images/Matlab.png"
 const Projects=()=>{
