@@ -81,15 +81,9 @@ MSSQL, SQL-SSMS, MongoDB, DynamoDB
  
   <Bio>
   <Title>
-    ML/AI
+    ML and Source Control 
   </Title>
-  Python, MATLAB
-  </Bio>
-  <Bio>
-  <Title>
-  Control 
-  </Title>
- Github, JIRA
+  Python, MATLAB, Github, JIRA
   </Bio>
   <Bio>
   <Title>
