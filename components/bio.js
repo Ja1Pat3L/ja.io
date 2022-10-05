@@ -2,7 +2,7 @@ import { Box } from '@chakra-ui/react'
 import styled from '@emotion/styled'
 
 export const Bio = styled(Box)`
-text-align:center;
+text-align:left;
   padding-left: 3.4em;
   text-indent: -3.4em;
   color: #8052ff;

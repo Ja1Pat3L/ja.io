@@ -41,6 +41,12 @@ const Page = () => {
 
   <Bio>
   <Title>
+    1999
+  </Title>
+  Born Uttar Pradesh, India
+</Bio>
+  <Bio>
+  <Title>
     2016
   </Title>
   Graduated High School
@@ -78,12 +84,23 @@ MSSQL, SQL-SSMS, MongoDB, DynamoDB
   </Title>
    Spring API and Microservices, .NETAPI, Python API
   </Bio>
- 
   <Bio>
   <Title>
-    ML and Source Control 
+   Design
+  </Title>
+  Three.js, React.js, Spline3D, Figma
+  </Bio>
+  <Bio>
+  <Title>
+    Machine Learning
   </Title>
   Python, MATLAB, Github, JIRA
+  </Bio>
+  <Bio>
+  <Title>
+    Source Control
+  </Title>
+   Github, JIRA
   </Bio>
   <Bio>
   <Title>
