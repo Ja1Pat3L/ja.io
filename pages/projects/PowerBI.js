@@ -27,40 +27,25 @@ import Section from "../../components/section"
       </LinkItem>
       </Section>
         <Title>
-          code.NET <Badge>2022-</Badge>
+          ja-io <Badge>2022-</Badge>
         </Title>
         <Paragraph>
-        Code.NET is a multipurpose managed
-web API built on ASP.NET ReSTful
-WebAPI using C#. The API is capable
-of reading, creating, updating, and
-deleting Client and Tutorial
-Information. The API also provides
-Tutorial Comments Section and
-Client Tutorial Section where Clients
-can perform read, create, and delete
-based on Tutorials. The API is
-available for use in any video or
-tutorial streaming platform. API is managed through Google APIGEE Services
+          A portfolio website made using next.js rendering 3d Object. Using Spline React to load object with premade orbit controls using three.js.
         </Paragraph>
         <List ml={4} my={4}>
           <ListItem>
-            <Meta>Google APIGEE Website</Meta>
-            <Link href="http://34.149.94.52.nip.io/swagger/index.html">http://34.149.94.52.nip.io/swagger/index.html <ExternalLinkIcon mx="2px" />
+            <Meta>Website</Meta>
+            <Link href="https://ja-io.vercel.app">
+            https://ja-io.vercel.app <ExternalLinkIcon mx="2px" />
             </Link>
           </ListItem>
-          <ListItem>
-            <Meta>AWS Beanstalk Website</Meta>
-            <Link href="http://codeapi-dev.us-east-1.elasticbeanstalk.com/">
-            http://codeapi-dev.us-east-1.elasticbeanstalk.com/ <ExternalLinkIcon mx="2px" />
-            </Link></ListItem>
           <ListItem textColor="#8052ff">
             <Meta>Platform</Meta>
-            <span>ASP Web API and Web MVC</span>
+            <span>Windows/macOS/Linux/iOS/Android</span>
           </ListItem>
           <ListItem textColor='#8052ff'>
             <Meta>Stack</Meta>
-            <span>ASP.NET-C#/Swagger-UI/AWS Services(AWS RDS[SQL],AWS DynamoDb,AWS Beanstalk)/Google APIGEE</span>
+            <span>Next.js/Spline.js/Chart.js/Chakra.js/React/three.js</span>
           </ListItem>
 
         </List>

@@ -26,38 +26,38 @@ const Projects=()=>{
 
 <SimpleGrid columns={(1,1,2)} gap={6}>
 <Section delay={0.3}>
-    <WorkGridItem id="NextJs" title="Next.js Portfolio" thumbnail={next}>
-Currently working on Nextjs Portfolio
+    <WorkGridItem id="NextJs"  thumbnail={next}>
+
     </WorkGridItem>
 </Section>
 <Section delay={0.3}>
-<WorkGridItem id="ASP" title="ASP.NET API and MVC" thumbnail={asp}>
-    A REST API based on ASP.net used for a simple ASP.Net MVC front end tutorial Website with authentication and Client Support 
+<WorkGridItem id="ASP" thumbnail={asp}>
+    
 </WorkGridItem>
 </Section>
 <Section delay={0.3}>
-    <WorkGridItem id="JAVAEE" title="Java EE API" thumbnail={javaswing}>
- A REST API based on Java Enterprise Edition 
+    <WorkGridItem id="JAVAEE"  thumbnail={javaswing}>
+ 
     </WorkGridItem>
 </Section>
 <Section delay={0.3}>
-<WorkGridItem id="MERN" title="MERN Stack Portfolio " thumbnail={mern}>
-    A personal portfolio project based on MERN Stack  
+<WorkGridItem id="PowerBI"  thumbnail={internship}>   
 </WorkGridItem>
 </Section>
 <Section delay={0.3}>
-    <WorkGridItem id="Android" title="Restaurant Application" thumbnail={android}>
-An android application to locate restaurants in nearby locations
+<WorkGridItem id="MERN"  thumbnail={mern}>
+</WorkGridItem>
+</Section>
+<Section delay={0.3}>
+    <WorkGridItem id="Android" thumbnail={android}>
     </WorkGridItem>
 </Section>
 <Section delay={0.3}>
-<WorkGridItem id="MATLAB" title="Lung Cancer Detection " thumbnail={matlab}>
-    Lung Cancer Detection using MATLAB image Processing using K-Means clustering 
+<WorkGridItem id="MATLAB"  thumbnail={matlab}> 
 </WorkGridItem>
 </Section>
 <Section delay={0.3}>
-<WorkGridItem id="AUTOCAD" title="Tractebel Engineering Internship" thumbnail={internship}>
-    Internship at Tractebel Engineering Pvt. Ltd. on a client based Gas Pipeline Project  
+<WorkGridItem id="AUTOCAD" thumbnail={internship}>
 </WorkGridItem>
 </Section>
 </SimpleGrid>
