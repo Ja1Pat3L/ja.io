@@ -3,14 +3,14 @@ import Section from '../components/section'
 import {WorkGridItem} from '../components/grid-item'
 import Layout from '../components/layouts/article'
 import Footer from "../components/footer"
-import next from "../public/images/next.png"
-import others from "../public/images/others.png"
-import mern from "../public/images/mern.png"
-import javaswing from "../public/images/swing.png"
-import asp from "../public/images/asp.png"
-import internship from "../public/images/internship.png" 
-import matlab from "../public/images/matlab.png"
-import powerbi from "../public/images/powerbi.png"
+import nextimage from "../public/images/nextimage.png"
+import othersimage from "../public/images/othersimage.png"
+import mernimage from "../public/images/mernimage.png"
+import javaswingimage from "../public/images/swingimage.png"
+import aspimage from "../public/images/aspimage.png"
+import internshipimage from "../public/images/internshipimage.png" 
+import matlabimage from "../public/images/matlabimage.png"
+import powerbiimage from "../public/images/powerbiimage.png"
 
 const Projects=()=>{
 
@@ -28,38 +28,38 @@ const Projects=()=>{
 
 <SimpleGrid columns={(1,1,2)} gap={6}>
 <Section delay={0.3}>
-    <WorkGridItem id="NextJs"  thumbnail={next}>
+    <WorkGridItem id="NextJs"  thumbnail={nextimage}>
 
     </WorkGridItem>
 </Section>
 <Section delay={0.3}>
-<WorkGridItem id="ASP" thumbnail={asp}>
+<WorkGridItem id="ASP" thumbnail={aspimage}>
     
 </WorkGridItem>
 </Section>
 <Section delay={0.3}>
-    <WorkGridItem id="JAVAEE"  thumbnail={powerbi}>
+    <WorkGridItem id="JAVAEE"  thumbnail={powerbiimage}>
  
     </WorkGridItem>
 </Section>
 <Section delay={0.3}>
-<WorkGridItem id="MERN"  thumbnail={mern}>   
+<WorkGridItem id="MERN"  thumbnail={mernimage}>   
 </WorkGridItem>
 </Section>
 <Section delay={0.3}>
-<WorkGridItem id="PowerBI"  thumbnail={javaswing}>
+<WorkGridItem id="PowerBI"  thumbnail={javaswingimage}>
 </WorkGridItem>
 </Section>
 <Section delay={0.3}>
-    <WorkGridItem id="Android" thumbnail={matlab}>
+    <WorkGridItem id="Android" thumbnail={matlabimage}>
     </WorkGridItem>
 </Section>
 <Section delay={0.3}>
-<WorkGridItem id="MATLAB"  thumbnail={others}> 
+<WorkGridItem id="MATLAB"  thumbnail={othersimage}> 
 </WorkGridItem>
 </Section>
 <Section delay={0.3}>
-<WorkGridItem id="AUTOCAD" thumbnail={internship}>
+<WorkGridItem id="AUTOCAD" thumbnail={internshipimage}>
 </WorkGridItem>
 </Section>
 </SimpleGrid>
