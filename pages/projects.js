@@ -3,13 +3,13 @@ import Section from '../components/section'
 import {WorkGridItem} from '../components/grid-item'
 import Layout from '../components/layouts/article'
 import Footer from "../components/footer"
-import next from "../public/images/next.png"
 import android from "../public/images/others.png"
 import mern from "../public/images/Mern.png"
 import javaswing from "../public/images/JavaSwing.png"
 import asp from "../public/images/Asp.png"
 import internship from "../public/images/Internship.png" 
 import matlab from "../public/images/Matlab.png"
+import mynewinage from "../public/images/mynewimage.png"
 const Projects=()=>{
 
     return(
@@ -26,7 +26,7 @@ const Projects=()=>{
 
 <SimpleGrid columns={(1,1,2)} gap={6}>
 <Section delay={0.3}>
-    <WorkGridItem id="NextJs"  thumbnail={next}>
+    <WorkGridItem id="NextJs"  thumbnail={mynewinage}>
 
     </WorkGridItem>
 </Section>
