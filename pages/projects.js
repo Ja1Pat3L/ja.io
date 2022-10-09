@@ -3,13 +3,15 @@ import Section from '../components/section'
 import {WorkGridItem} from '../components/grid-item'
 import Layout from '../components/layouts/article'
 import Footer from "../components/footer"
-import next from "../public/images/Next.png"
-import android from "../public/images/Android.png"
-import mern from "../public/images/Mern.png"
-import javaswing from "../public/images/JavaSwing.png"
-import asp from "../public/images/Asp.png"
-import internship from "../public/images/Internship.png" 
-import matlab from "../public/images/Matlab.png"
+import next from "../public/images/next.png"
+import others from "../public/images/others.png"
+import mern from "../public/images/mern.png"
+import javaswing from "../public/images/swing.png"
+import asp from "../public/images/asp.png"
+import internship from "../public/images/internship.png" 
+import matlab from "../public/images/matlab.png"
+import powerbi from "../public/images/powerbi.png"
+
 const Projects=()=>{
 
     return(
@@ -36,24 +38,24 @@ const Projects=()=>{
 </WorkGridItem>
 </Section>
 <Section delay={0.3}>
-    <WorkGridItem id="JAVAEE"  thumbnail={javaswing}>
+    <WorkGridItem id="JAVAEE"  thumbnail={powerbi}>
  
     </WorkGridItem>
 </Section>
 <Section delay={0.3}>
-<WorkGridItem id="PowerBI"  thumbnail={internship}>   
+<WorkGridItem id="MERN"  thumbnail={mern}>   
 </WorkGridItem>
 </Section>
 <Section delay={0.3}>
-<WorkGridItem id="MERN"  thumbnail={mern}>
+<WorkGridItem id="PowerBI"  thumbnail={javaswing}>
 </WorkGridItem>
 </Section>
 <Section delay={0.3}>
-    <WorkGridItem id="Android" thumbnail={android}>
+    <WorkGridItem id="Android" thumbnail={matlab}>
     </WorkGridItem>
 </Section>
 <Section delay={0.3}>
-<WorkGridItem id="MATLAB"  thumbnail={matlab}> 
+<WorkGridItem id="MATLAB"  thumbnail={others}> 
 </WorkGridItem>
 </Section>
 <Section delay={0.3}>

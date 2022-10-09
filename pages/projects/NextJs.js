@@ -4,7 +4,7 @@ import {
     Link,
     List,
     ListItem,
-    AspectRatio,Heading,Box
+    Heading,Box
   } from '@chakra-ui/react'
   import { ExternalLinkIcon } from '@chakra-ui/icons'
   import { Title, Meta } from '../../components/projects'
@@ -12,7 +12,8 @@ import {
   import Layout from '../../components/layouts/article'
   import LinkItem from 'next/link'
 import Section from "../../components/section"
-  
+import Footer from '../../components/footer';  
+
   const Project = () => (
     <Layout title="NextJs">
       <Container>
@@ -30,7 +31,7 @@ import Section from "../../components/section"
           ja-io <Badge>2022-</Badge>
         </Title>
         <Paragraph>
-          A three dimensional website made using Next.js, Spline 3D, three.js, Chakra-UI and Framer Motion.   
+        A three-dimensional website made using Next.js, Spline 3D, three.js, Chakra-UI, and Framer Motion. Working on rendering a responsive, animated chart using Chart.js.  
         </Paragraph>
         <List ml={4} my={4}>
           <ListItem>
@@ -39,27 +40,24 @@ import Section from "../../components/section"
             https://ja-io.vercel.app <ExternalLinkIcon mx="2px" />
             </Link>
           </ListItem>
+          <ListItem>
+            <Meta>Source</Meta>
+            <Link href="https://github.com/Ja1Pat3L/ja.io">
+            https://github.com/Ja1Pat3L/ja.io <ExternalLinkIcon mx="2px" />
+            </Link>
+          </ListItem>
           <ListItem textColor="#8052ff">
             <Meta>Platform</Meta>
-            <span>Windows/macOS/Linux/iOS/Android</span>
+            <span>NextJs Portfolio Website</span>
           </ListItem>
           <ListItem textColor='#8052ff'>
             <Meta>Stack</Meta>
             <span>Next.js-Spline3D-Chart.js-Chakra.js-React-Three.js</span>
           </ListItem>
+      
 
         </List>
-
-        <AspectRatio maxW="640px" ratio={1.7} my={4}>
-          <iframe
-            src="https://www.youtube.com/embed/-qBavwqc_mY"
-            title="YouTube video player"
-            frameBorder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen
-          ></iframe>
-        </AspectRatio>
-      </Container>
+      </Container>  <Footer/>
     </Layout>
   )
   export default Project

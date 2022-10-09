@@ -27,25 +27,65 @@ import Section from "../../components/section"
       </LinkItem>
       </Section>
         <Title>
-          ja-io <Badge>2022-</Badge>
+          QuoteMe <Badge>2022-</Badge>
         </Title>
         <Paragraph>
-          A portfolio website made using next.js rendering 3d Object. Using Spline React to load object with premade orbit controls using three.js.
+          Currently working on a Software Engineering Technology Group Project based on React.
         </Paragraph>
         <List ml={4} my={4}>
           <ListItem>
             <Meta>Website</Meta>
             <Link href="https://ja-io.vercel.app">
-            https://ja-io.vercel.app <ExternalLinkIcon mx="2px" />
+            unhosted <ExternalLinkIcon mx="2px" />
+            </Link>
+          </ListItem><ListItem>
+            <Meta>Source</Meta>
+            <Link href="https://github.com/Ja1Pat3L/ja.io">
+            https://github.com/Ja1Pat3L/ja.io <ExternalLinkIcon mx="2px" />
             </Link>
           </ListItem>
           <ListItem textColor="#8052ff">
             <Meta>Platform</Meta>
-            <span>Windows/macOS/Linux/iOS/Android</span>
+            <span>React Laptop Quotation Website</span>
           </ListItem>
           <ListItem textColor='#8052ff'>
             <Meta>Stack</Meta>
-            <span>Next.js/Spline.js/Chart.js/Chakra.js/React/three.js</span>
+            <span>React.js-MongoDb-Node.js</span>
+          </ListItem>
+
+        </List>
+
+        
+        <AspectRatio maxW="640px" ratio={1.7} my={4}>
+          <iframe
+            src="https://www.youtube.com/embed/-qBavwqc_mY"
+            title="YouTube video player"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+          ></iframe>
+        </AspectRatio>
+
+        <Title>
+          Complexity<Badge>2021-</Badge>
+        </Title>
+        <Paragraph>
+          A survey website made using Express.js. Transformed into an Angular website. Website is capable of Authentication and Collecting User Surveys.
+        </Paragraph>
+        <List ml={4} my={4}>
+          <ListItem>
+            <Meta>Source</Meta>
+            <Link href="https://github.com/DanielMJSilva/COMP229_Group10_Complexity">
+            https://github.com/DanielMJSilva/COMP229_Group10_Complexity <ExternalLinkIcon mx="2px" />
+            </Link>
+          </ListItem>
+          <ListItem textColor="#8052ff">
+            <Meta>Platform</Meta>
+            <span>MEAN Survey Website</span>
+          </ListItem>
+          <ListItem textColor='#8052ff'>
+            <Meta>Stack</Meta>
+            <span>TypeScript/Express.js/Angular.js/MongoDB/Node.js</span>
           </ListItem>
 
         </List>
@@ -59,6 +99,9 @@ import Section from "../../components/section"
             allowFullScreen
           ></iframe>
         </AspectRatio>
+
+
+
       </Container>
     </Layout>
   )
