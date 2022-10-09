@@ -3,8 +3,8 @@ import Section from '../components/section'
 import {WorkGridItem} from '../components/grid-item'
 import Layout from '../components/layouts/article'
 import Footer from "../components/footer"
-import next from "../public/images/Next.png"
-import android from "../public/images/Android.png"
+import next from "../public/images/next.png"
+import android from "../public/images/others.png"
 import mern from "../public/images/Mern.png"
 import javaswing from "../public/images/JavaSwing.png"
 import asp from "../public/images/Asp.png"
