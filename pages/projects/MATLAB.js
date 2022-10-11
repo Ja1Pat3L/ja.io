@@ -4,7 +4,7 @@ import {
     Link,
     List,
     ListItem,
-    AspectRatio,Heading,Box
+    Heading,Box,Button
   } from '@chakra-ui/react'
   import { ExternalLinkIcon } from '@chakra-ui/icons'
   import { Title, Meta } from '../../components/projects'
@@ -12,7 +12,9 @@ import {
   import Layout from '../../components/layouts/article'
   import LinkItem from 'next/link'
 import Section from "../../components/section"
-  
+import Footer from '../../components/footer'
+
+
   const Project = () => (
     <Layout title="NextJs">
       <Container>
@@ -27,39 +29,35 @@ import Section from "../../components/section"
       </LinkItem>
       </Section>
         <Title>
-          ja-io <Badge>2022-</Badge>
+          Lung Cancer Detection <Badge>2020-</Badge>
         </Title>
         <Paragraph>
-          A portfolio website made using next.js rendering 3d Object. Using Spline React to load object with premade orbit controls using three.js.
+          Lung cancer detection using Matlab image processing. K-Means Clustering and Neural Network Tools along with Cancer Classifiers. Requires Computerized Tomography scans.
         </Paragraph>
         <List ml={4} my={4}>
-          <ListItem>
-            <Meta>Website</Meta>
-            <Link href="https://ja-io.vercel.app">
-            https://ja-io.vercel.app <ExternalLinkIcon mx="2px" />
+        <ListItem>
+            <Meta>Source</Meta>
+            <Link href=" https://github.com/Ja1Pat3L/LungCancerDetectionUsingMATLAB.git"> https://github.com/Ja1Pat3L/LungCancerDetectionUsingMATLAB.git<ExternalLinkIcon mx="2px" />
             </Link>
           </ListItem>
           <ListItem textColor="#8052ff">
             <Meta>Platform</Meta>
-            <span>Windows/macOS/Linux/iOS/Android</span>
+            <span>MATLAB GUI Lung Cancer Detection</span>
           </ListItem>
           <ListItem textColor='#8052ff'>
             <Meta>Stack</Meta>
-            <span>Next.js/Spline.js/Chart.js/Chakra.js/React/three.js</span>
+            <span>MATLAB</span>
           </ListItem>
-
         </List>
 
-        <AspectRatio maxW="640px" ratio={1.7} my={4}>
-          <iframe
-            src="https://www.youtube.com/embed/-qBavwqc_mY"
-            title="YouTube video player"
-            frameBorder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen
-          ></iframe>
-        </AspectRatio>
-      </Container>
+<Box align='center'>
+<Button colorScheme='purple' variant='solid'>Download Report</Button>
+</Box>
+
+
+      </Container><Footer/>
     </Layout>
   )
   export default Project
+
+ 

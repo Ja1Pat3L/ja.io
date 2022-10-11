@@ -38,7 +38,7 @@ const Projects=()=>{
 </WorkGridItem>
 </Section>
 <Section delay={0.3}>
-    <WorkGridItem id="JAVAEE"  thumbnail={powerbiimage}>
+    <WorkGridItem id="JAVAEE"  thumbnail={javaswingimage}>
  
     </WorkGridItem>
 </Section>
@@ -47,19 +47,19 @@ const Projects=()=>{
 </WorkGridItem>
 </Section>
 <Section delay={0.3}>
-<WorkGridItem id="PowerBI"  thumbnail={javaswingimage}>
+<WorkGridItem id="PowerBI"  thumbnail={powerbiimage}>
 </WorkGridItem>
 </Section>
 <Section delay={0.3}>
-    <WorkGridItem id="Android" thumbnail={matlabimage}>
+    <WorkGridItem id="MATLAB" thumbnail={matlabimage}>
     </WorkGridItem>
 </Section>
 <Section delay={0.3}>
-<WorkGridItem id="MATLAB"  thumbnail={othersimage}> 
+<WorkGridItem id="AUTOCAD"  thumbnail={internshipimage}> 
 </WorkGridItem>
 </Section>
 <Section delay={0.3}>
-<WorkGridItem id="AUTOCAD" thumbnail={internshipimage}>
+<WorkGridItem id="others" thumbnail={othersimage}>
 </WorkGridItem>
 </Section>
 </SimpleGrid>
