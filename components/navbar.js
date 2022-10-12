@@ -81,7 +81,7 @@ const LinkItem = ({ href, path, children}) => {
       >Github</Button>
       <Button 
              as={Link}
-             href="https://github.com/Ja1Pat3L/ja.io/"
+             href="https://drive.google.com/file/d/1kF84JvTe2lqTzLc3oDtHDLHGPy4Z8zDD/view?usp=sharing"
           borderRadius="lg" solid
         mb={6}
         p={3}
@@ -91,7 +91,7 @@ const LinkItem = ({ href, path, children}) => {
         bg={'8052ff'}
         css={{ backdropFilter: 'blur(30px)'  
        }  }
-      >Download Resume</Button>
+      >Resume</Button>
         </Stack>
         <Box flex={1} align="right">
           <ThemeToggleButton/>
@@ -115,6 +115,9 @@ const LinkItem = ({ href, path, children}) => {
                 </NextLink>
                 <NextLink href="/projects" passHref>
                   <MenuItem as={Link}>Projects</MenuItem>
+                </NextLink>
+                <NextLink href="https://drive.google.com/file/d/1kF84JvTe2lqTzLc3oDtHDLHGPy4Z8zDD/view?usp=sharing" passHref>
+                  <MenuItem as={Link}>Resume</MenuItem>
                 </NextLink>
               </MenuList>
             </Menu>

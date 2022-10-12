@@ -108,8 +108,13 @@ MSSQL, SQL-SSMS, MongoDB, DynamoDB
   </Title>
  PowerBI, AUTOCAD, Android 
   </Bio>
-               
+
+  <Box align='center'>
+<Button as={Link} href="/projects" path='../pages/projects.js' colorScheme='purple' variant='solid' mt={8}>Projects</Button>
 </Box>
+
+</Box>
+
 <Box flexShrink={0} borderRadius="md" mt="6" mb="6" p={3} align="center" textColor="#8052ff">
   <Heading textColor="#8052ff">Interests</Heading><br></br>
 <Bio>
@@ -120,7 +125,7 @@ UEFA-Real Madrid CF, FIVB-Japan
 <Bio>
   <Title>Games
 </Title>
-Valorant, Fortnite, CSGO, PES2023, FIFA23
+Valorant, Fortnite, CSGO, FIFA23
 </Bio>
 <Bio>
   <Title>Culture

@@ -14,6 +14,7 @@ import {
 import Section from "../../components/section"
 import Footer from '../../components/footer'
 
+const document= "https://drive.google.com/file/d/1SL4vvvtuCzekCwXR8OshTt-LirbJQeXb/view?usp=sharing"
 
   const Project = () => (
     <Layout title="NextJs">
@@ -51,7 +52,7 @@ import Footer from '../../components/footer'
         </List>
 
 <Box align='center'>
-<Button colorScheme='purple' variant='solid'>Download Report</Button>
+<Button as={Link} href={document} colorScheme='purple' variant='solid'>Documentation</Button>
 </Box>
 
 

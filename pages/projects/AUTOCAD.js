@@ -1,7 +1,7 @@
 import {
     Container,
     Badge,
-    
+    Link,
     List,
     ListItem,
     Heading,Box,Button
@@ -13,6 +13,8 @@ import {
 import Section from "../../components/section"
 import Footer from '../../components/footer'
   
+const document="https://drive.google.com/file/d/1HhtV9nj-srct96ICc94hdfgQmSNk6EWJ/view?usp=sharing"
+
   const Project = () => (
     <Layout title="NextJs">
       <Container>
@@ -27,7 +29,7 @@ import Footer from '../../components/footer'
       </LinkItem>
       </Section>
         <Title>
-          Tractebel Engineering <Badge>2019-2020</Badge>
+          Tractebel Engineering <Badge>2018-2019</Badge>
         </Title>
         <Paragraph>
         Hands on experience in a real time Gas Pipeline Project from a Belgium based
@@ -42,7 +44,7 @@ senior engineer and is working in the conglomerate since 2002, building sketches
         </List>
 
         <Box align='center'>
-<Button mt={4} colorScheme='purple' variant='solid'>Certificate</Button>
+<Button mt={6} as={Link} href={document} colorScheme='purple' variant='solid'>Certification</Button>
 </Box>
       </Container><Footer/>
     </Layout>

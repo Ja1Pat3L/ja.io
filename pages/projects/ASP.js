@@ -4,7 +4,7 @@ import {
     Link,
     List,
     ListItem,
-    AspectRatio,Heading,Box
+    AspectRatio,Heading,Box,Button
   } from '@chakra-ui/react'
   import { ExternalLinkIcon } from '@chakra-ui/icons'
   import { Title, Meta } from '../../components/projects'
@@ -13,6 +13,8 @@ import {
   import LinkItem from 'next/link'
 import Section from "../../components/section"
 import Footer from '../../components/footer';
+
+const document="https://drive.google.com/file/d/14mOy1d1mraPgz8zCwVD5TaOzfVRC_fBs/view?usp=sharing"
   
   const Project = () => (
     <Layout title="NextJs">
@@ -71,6 +73,11 @@ import Footer from '../../components/footer';
             allowFullScreen
           ></iframe>
           </AspectRatio>
+
+          <Box align='center'>
+<Button as={Link} href={document} colorScheme='purple' variant='solid'>Documentation</Button>
+</Box>
+
       </Container>  <Footer/>
     </Layout>
   )
