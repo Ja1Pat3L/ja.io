@@ -30,7 +30,7 @@ const document= "https://drive.google.com/file/d/1SL4vvvtuCzekCwXR8OshTt-LirbJQe
       </LinkItem>
       </Section>
         <Title>
-          Lung Cancer Detection <Badge>2020-</Badge>
+          Lung Cancer Detection <Badge>2020</Badge>
         </Title>
         <Paragraph>
           Lung cancer detection using Matlab image processing. K-Means Clustering and Neural Network Tools along with Cancer Classifiers. Requires Computerized Tomography scans.

@@ -3,16 +3,18 @@ import {
     Badge,
     Link,
     List,
+    Button,
     ListItem,
-    AspectRatio,Heading,Box
+    Heading,Box
   } from '@chakra-ui/react'
-  import { ExternalLinkIcon } from '@chakra-ui/icons'
-  import { Title, Meta } from '../../components/projects'
+  import { Title, Meta ,WorkImage} from '../../components/projects'
   import Paragraph from '../../components/paragraph'
   import Layout from '../../components/layouts/article'
   import LinkItem from 'next/link'
 import Section from "../../components/section"
   
+const document="https://drive.google.com/file/d/1oVCLXBRQALTzFY8hBzb2uEhwl1Mt26vp/view?usp=sharing"
+
   const Project = () => (
     <Layout title="NextJs">
       <Container>
@@ -27,38 +29,32 @@ import Section from "../../components/section"
       </LinkItem>
       </Section>
         <Title>
-          ja-io <Badge>2022-</Badge>
+          BI Reporting <Badge>2022</Badge>
         </Title>
         <Paragraph>
-          A portfolio website made using next.js rendering 3d Object. Using Spline React to load object with premade orbit controls using three.js.
+          Using Microsoft Sql Server Management studio to handle World Wide Importers Database and accessing it in PowerBI for visualization using BI tools.
         </Paragraph>
         <List ml={4} my={4}>
-          <ListItem>
-            <Meta>Website</Meta>
-            <Link href="https://ja-io.vercel.app">
-            https://ja-io.vercel.app <ExternalLinkIcon mx="2px" />
-            </Link>
-          </ListItem>
-          <ListItem textColor="#8052ff">
+          <ListItem textColor='#8052ff'>
             <Meta>Platform</Meta>
-            <span>Windows/macOS/Linux/iOS/Android</span>
+            <span>PowerBI</span>
           </ListItem>
           <ListItem textColor='#8052ff'>
             <Meta>Stack</Meta>
-            <span>Next.js/Spline.js/Chart.js/Chakra.js/React/three.js</span>
+            <span>PowerBI/SSMS</span>
           </ListItem>
-
         </List>
 
-        <AspectRatio maxW="640px" ratio={1.7} my={4}>
-          <iframe
-            src="https://www.youtube.com/embed/-qBavwqc_mY"
-            title="YouTube video player"
-            frameBorder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen
-          ></iframe>
-        </AspectRatio>
+        <WorkImage src="/images/bi.png"/>
+        
+
+
+        <Box mb={6}mt={6} align='center'>
+<Button as={Link} href={document} colorScheme='purple' variant='solid'>Documentation</Button>
+</Box>
+   
+   
+   
       </Container>
     </Layout>
   )
