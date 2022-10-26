@@ -1,4 +1,5 @@
 import { Container,Box, Heading,Image,ListItem,Link,Button,List } from "@chakra-ui/react"
+import LinkItem from 'next/link'
 import Section from '../components/section'
 import Layout from '../components/layouts/article'
 import Paragraph from '../components/paragraph';
@@ -109,9 +110,13 @@ MSSQL, SQL-SSMS, MongoDB, DynamoDB
  PowerBI, AUTOCAD, Android 
   </Bio>
 
-  <Box align='center'>
-<Button as={Link} href="/projects" path='../pages/projects.js' colorScheme='purple' variant='solid' mt={8}>Projects</Button>
-</Box>
+  <Section delay={0.1}>
+     <LinkItem href="/projects" path='../pages/projects.js' scroll={false}>
+      <Button colorScheme='purple' variant='outline' mt={8} >
+ <Heading align ="center" size="24" textColor='#8052ff' >Projects</Heading>  
+      </Button>
+      </LinkItem>
+      </Section>
 
 </Box>
 
@@ -152,7 +157,7 @@ Blockchain, Automation, Astrophysics
             </Link>
           </ListItem>
           <ListItem>
-            <Link href="https://github.com/Ja1Pat3L" target="_blank">
+            <Link href="https://www.linkedin.com/in/jai-patel-257b73253/" target="_blank">
               <Button
                 variant="ghost"
                 color="#8052ff"
