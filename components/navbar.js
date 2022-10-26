@@ -116,7 +116,7 @@ const LinkItem = ({ href, path, children}) => {
                 <NextLink href="/projects" passHref>
                   <MenuItem as={Link}>Projects</MenuItem>
                 </NextLink>
-                <NextLink href="https://drive.google.com/file/d/1kF84JvTe2lqTzLc3oDtHDLHGPy4Z8zDD/view?usp=sharing" passHref>
+                <NextLink href="https://drive.google.com/file/d/1X_qNGaMOo_W_KmiUlfDqLIBMsb59OQn_/view?usp=sharing" passHref>
                   <MenuItem as={Link}>Resume</MenuItem>
                 </NextLink>
               </MenuList>

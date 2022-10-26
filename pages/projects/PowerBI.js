@@ -12,6 +12,7 @@ import {
   import Layout from '../../components/layouts/article'
   import LinkItem from 'next/link'
 import Section from "../../components/section"
+import Footer from '../../components/footer'
   
 const document="https://drive.google.com/file/d/1oVCLXBRQALTzFY8hBzb2uEhwl1Mt26vp/view?usp=sharing"
 
@@ -45,9 +46,7 @@ const document="https://drive.google.com/file/d/1oVCLXBRQALTzFY8hBzb2uEhwl1Mt26v
           </ListItem>
         </List>
 
-        <WorkImage src="/images/bi.png"/>
-        
-
+        <WorkImage src="/images/pbix.png"/>
 
         <Box mb={6}mt={6} align='center'>
 <Button as={Link} href={document} colorScheme='purple' variant='solid'>Documentation</Button>
@@ -55,7 +54,7 @@ const document="https://drive.google.com/file/d/1oVCLXBRQALTzFY8hBzb2uEhwl1Mt26v
    
    
    
-      </Container>
+      </Container><Footer/>
     </Layout>
   )
   export default Project

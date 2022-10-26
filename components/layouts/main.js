@@ -1,8 +1,12 @@
 import Head from 'next/head';
 import Navbar from '../navbar';
-import Render from '../render'
-import { Box, Container } from '@chakra-ui/react'
 
+import { Box, Container } from '@chakra-ui/react'
+import dynamic from 'next/dynamic';
+
+const Render=dynamic(()=>import('../render'),{
+    ssr:false,
+})
 
 const Main = ({ children, router }) => {
     return (
@@ -15,7 +19,6 @@ const Main = ({ children, router }) => {
             <Navbar path={router.asPath}/>
             
             <Render/>
-
             <Container maxW="container.md" pt={14}>
                 {children}
             </Container>
