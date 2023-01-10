@@ -28,6 +28,22 @@ const document="https://drive.google.com/file/d/1HhtV9nj-srct96ICc94hdfgQmSNk6EW
       </Box>
       </LinkItem>
       </Section>
+      <Title>
+            FimiMall <Badge>2022-Present</Badge>
+        </Title>
+        <Paragraph>
+        Retail Application: Built Helm Charts for multiple microservices using Kubernetes and Docker. Developing features for Order and Payment using Java Spring and MongoDB.
+        </Paragraph>
+        <List ml={4} my={4}>
+          <ListItem textColor="#8052ff">
+            <Meta>Platform</Meta>
+            <span>Spring Boot Application </span>
+          </ListItem>
+          <ListItem textColor='#8052ff'>
+            <Meta>Stack</Meta>
+            <span>Java Spring-MongoDB-Kubernetes-Docker</span>
+          </ListItem>
+        </List>
         <Title>
           Tractebel Engineering <Badge>2018-2019</Badge>
         </Title>
@@ -51,6 +67,7 @@ senior engineer and is working in the conglomerate since 2002, built sketches us
         <Box align='center'>
 <Button mt={6} as={Link} href={document} colorScheme='purple' variant='solid'>Certification</Button>
 </Box>
+
       </Container><Footer/>
     </Layout>
   )

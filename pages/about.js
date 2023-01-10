@@ -64,6 +64,12 @@ const Page = () => {
   </Title>
   Advanced Graduate Software Engineering Technology 
   </Bio>
+  <Bio>
+  <Title>
+    2023
+  </Title>
+  Intern At FimiMall + Freelance Developer 
+  </Bio>
 </Box>
   <Box flexShrink={0} borderRadius="md" mb="6" align="center" textColor="#8052ff">
   <Heading textColor="#8052ff" mb="6" >Proficiency</Heading>
@@ -102,6 +108,12 @@ MSSQL, SQL-SSMS, MongoDB, DynamoDB
     Source Control
   </Title>
    Github, JIRA
+  </Bio>
+  <Bio>
+  <Title>
+  Devops
+  </Title>
+ Kubernetes, Docker 
   </Bio>
   <Bio>
   <Title>
