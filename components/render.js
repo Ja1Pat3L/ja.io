@@ -7,7 +7,7 @@ const Render = () => {
       <Box       
       align='center' height={480}
       >
-<Spline scene="https://prod.spline.design/kaePoGj9bb5V9T0Z/scene.splinecode"></Spline>
+<Spline scene="https://prod.spline.design/RjcVhpgccMeUeZTG/scene.splinecode"></Spline>
 </Box>
     )
   }
