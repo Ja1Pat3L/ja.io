@@ -5,7 +5,7 @@ import Layout from '../components/layouts/article'
 import Paragraph from '../components/paragraph';
 import { Bio,Title } from '../components/bio'; 
 import Footer from '../components/footer';
-import { IoLogoDiscord, IoLogoInstagram, IoLogoGithub,IoLogoLinkedin,IoLogoReddit } from 'react-icons/io5'
+import {IoLogoInstagram, IoLogoGithub,IoLogoLinkedin } from 'react-icons/io5'
 const profileimage='/images/Profile.png'
 
 const Page = () => {
@@ -190,7 +190,7 @@ Blockchain, Automation, Astrophysics
               </Button>
             </Link>
           </ListItem>
-          <ListItem>
+          {/* <ListItem>
             <Link href="https://www.reddit.com/user/SnooGuavas9295" target="_blank">
               <Button
                 variant="ghost"
@@ -211,7 +211,7 @@ Blockchain, Automation, Astrophysics
                 @TheSexyPriest#4549
               </Button>
             </Link>
-          </ListItem>
+          </ListItem> */}
          
         </List>
 </Box>
