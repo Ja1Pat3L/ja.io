@@ -110,9 +110,9 @@ const LinkItem = ({ href, path, children}) => {
                 bg={{backdropFilter: 'blur(2px)'}}
                 css={{backdropFilter: 'blur(30px)'}}
               >
-                <NextLink href="/about" passHref>
+                {/* <NextLink href="/about" passHref>
                   <MenuItem as={Link}>About</MenuItem>
-                </NextLink>
+                </NextLink> */}
                 <NextLink href="/projects" passHref>
                   <MenuItem as={Link}>Projects</MenuItem>
                 </NextLink>

@@ -5,7 +5,7 @@ import { Box } from '@chakra-ui/react'
 const Render = () => {
     return (
       <Box       
-      align='center' height={480}
+      align='center' height={420}
       >
 <Spline scene="https://prod.spline.design/RjcVhpgccMeUeZTG/scene.splinecode"></Spline>
 </Box>

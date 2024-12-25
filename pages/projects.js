@@ -11,6 +11,8 @@ import aspimage from "../public/images/aspimage.png"
 import internshipimage from "../public/images/internshipimage.png" 
 import matlabimage from "../public/images/matlabimage.png"
 import powerbiimage from "../public/images/powerbiimage.png"
+import LinkItem from 'next/link'
+
 
 const Projects=()=>{
 
@@ -18,12 +20,14 @@ const Projects=()=>{
         <Layout>
 <Container>
 <Section delay={0.1}>
+<LinkItem href="/" path='../pages/index.js' scroll={false}>
       <Box borderRadius="lg" mb={20} p={3}  
       bg={{backdropFilter: 'blur(2px)'}}
       aria-label="Options"
       css={{backdropFilter: 'blur(30px)'}}>
  <Heading align='center' size="24" textColor="#8052ff">Click on each project to know more</Heading>  
       </Box>
+      </LinkItem>
       </Section>
 
 <SimpleGrid columns={(1,1,2)} gap={6}>
