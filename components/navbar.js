@@ -60,9 +60,9 @@ const LinkItem = ({ href, path, children}) => {
           flexGrow={1}
           mt={{ base: 4, md: 0 }}
         >
-          <LinkItem href="/about" path='../pages/about.js'>
+          {/* <LinkItem href="/about" path='../pages/about.js'>
             About
-          </LinkItem>
+          </LinkItem> */}
           <LinkItem href="/projects" path='../pages/projects.js'>
             Projects
           </LinkItem>
@@ -79,7 +79,7 @@ const LinkItem = ({ href, path, children}) => {
         css={{ backdropFilter: 'blur(30px)'  
        }  }
       >Github</Button>
-      <Button 
+      {/* <Button 
              as={Link}
              href="https://drive.google.com/file/d/1X_qNGaMOo_W_KmiUlfDqLIBMsb59OQn_/view?usp=sharing"
           borderRadius="lg" solid
@@ -91,7 +91,7 @@ const LinkItem = ({ href, path, children}) => {
         bg={'8052ff'}
         css={{ backdropFilter: 'blur(30px)'  
        }  }
-      >Resume</Button>
+      >Resume</Button> */}
         </Stack>
         <Box flex={1} align="right">
           <ThemeToggleButton/>
@@ -116,9 +116,9 @@ const LinkItem = ({ href, path, children}) => {
                 <NextLink href="/projects" passHref>
                   <MenuItem as={Link}>Projects</MenuItem>
                 </NextLink>
-                <NextLink href="https://drive.google.com/file/d/1X_qNGaMOo_W_KmiUlfDqLIBMsb59OQn_/view?usp=sharing" passHref>
+                {/* <NextLink href="https://drive.google.com/file/d/1X_qNGaMOo_W_KmiUlfDqLIBMsb59OQn_/view?usp=sharing" passHref>
                   <MenuItem as={Link}>Resume</MenuItem>
-                </NextLink>
+                </NextLink> */}
               </MenuList>
             </Menu>
           </Box></Box>
