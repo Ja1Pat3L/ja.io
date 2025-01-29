@@ -28,7 +28,7 @@ const Page = () => {
       </LinkItem> */}
       <Section delay={0.1}>
 <LinkItem href="/" path='../pages/index.js' scroll={false}>
-      <Box borderRadius="lg" mb={20} p={3}  
+      <Box borderRadius="lg" mb={20} p={3} mt={-20}
       bg={{backdropFilter: 'blur(2px)'}}
       aria-label="Options"
       css={{backdropFilter: 'blur(30px)'}}>
@@ -37,7 +37,7 @@ const Page = () => {
       </LinkItem>
       </Section>
 
-<SimpleGrid columns={(1,1,2)} gap={6}>
+<SimpleGrid columns={(1,1,2)} gap={3}>
 <Section delay={0.3}>
     <WorkGridItem id="NextJs"  thumbnail={nextimage}>
 
